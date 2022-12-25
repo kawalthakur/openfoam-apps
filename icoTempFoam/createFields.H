@@ -23,7 +23,7 @@ dimensionedScalar nu
 dimensionedScalar kappa
 (
    "kappa",
-   dimensionSet (0,2,-1,0,0,0,0),
+   dimensionSet(0,2,-1,0,0,0,0),
    transportProperties
 );
 
@@ -69,7 +69,7 @@ volScalarField T
         IOobject::AUTO_WRITE
     ),
     mesh
-)
+);
 
 #include "createPhi.H"
 

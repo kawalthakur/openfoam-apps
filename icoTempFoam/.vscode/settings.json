@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "createFields.H": "cpp",
+        "icoTempFoam.C": "cpp"
+    }
+}
