@@ -19,6 +19,14 @@ dimensionedScalar nu
     transportProperties
 );
 
+//Adding the kappa as Dimensioned scalar
+dimensionedScalar kappa
+(
+   "kappa",
+   dimensionSet (0,2,-1,0,0,0,0),
+   transportProperties
+);
+
 Info<< "Reading field p\n" << endl;
 volScalarField p
 (
