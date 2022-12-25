@@ -56,6 +56,20 @@ volVectorField U
     mesh
 );
 
+//Adding Temperature as a IOobject to be read
+Info<< "Reading field T\n" << endl;
+volScalarField T
+(
+    IOobject
+    (
+        "T",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+)
 
 #include "createPhi.H"
 
