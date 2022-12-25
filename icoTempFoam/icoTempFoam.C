@@ -155,6 +155,13 @@ int main(int argc, char *argv[])
             U.correctBoundaryConditions();
         }
 
+        Info << "Solving the Equation for Temperature \n" ;
+        fvScalarMatrix temperatureEquation
+        (
+            fvm::ddt(T)+fvm::div(phi,T)-fvm::laplacian(kappa,T)
+        );
+        temperatureEquation.solve();
+
         runTime.write();
 
         runTime.printExecutionTime(Info);
