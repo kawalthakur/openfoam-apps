@@ -1,0 +1,4 @@
+SOURCE = \
+my-heat-eq.C \
+
+# sources
